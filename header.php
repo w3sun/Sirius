@@ -4,8 +4,7 @@
 		<title><?php wp_title( '-', true, 'right' ); ?></title>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="<?php sirius_description(); ?>" />
 		<meta name="keywords" content="<?php sirius_keywords();?>" />
 		<?php wp_head(); ?>
