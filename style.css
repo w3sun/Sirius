@@ -2397,7 +2397,7 @@ input[type=radio]+label:before {
 
 @media screen and (max-width:736px) {
     .sirius-thumb {
-        height: 330px;
+        height: 260px;
     }
 }
 
