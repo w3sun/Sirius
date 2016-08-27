@@ -4,7 +4,7 @@
 
 Sirius is a clean, simple and focus on reading theme for WordPress, based on HTML5 and [Font Awesome](https://github.com/FortAwesome/Font-Awesome). Created and maintained by [Vtrois](https://www.vtrois.com). Stay up to date with the latest release and announcements on [Bulletin Board](https://www.vtrois.com/projects/theme-sirius.html).
 
-![Sirius Demo](https://www.vtrois.com/wp-content/uploads/2016/08/Sirius-demo.png)
+![Sirius Demo](https://dn-coding-net-production-pp.qbox.me/ec79c395-b4d7-433b-88aa-f95a982dbf2b.png)
 
 ##Structure
 Within the download you'll find the following directories and files. You'll see something like this:
