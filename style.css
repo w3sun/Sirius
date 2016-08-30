@@ -4,7 +4,7 @@ Theme URI: https://github.com/Vtrois/Sirius
 Author: Vtrois
 Author URI: https://www.vtrois.com/
 Description: A clean simple and focus on reading theme for WordPress
-Version: 1.0.1
+Version: 1.0.2
 License: Mozilla Public License Version 2.0
 Tags: black, white, red, two-columns, right-sidebar
 */
@@ -128,7 +128,7 @@ body {
 }
 
 .container {
-    width: 45em;
+    width: 65em;
 }
 
 @media screen and (max-width:1680px) {
@@ -309,7 +309,7 @@ body {
 }
 
 .row.uniform {
-    margin: -2em 0 -1px -2em;
+    margin: -1em 0 -1px -2em;
 }
 
 .row.\32 00\25>* {
@@ -2912,7 +2912,7 @@ table.alt tfoot {
 }
 
 #main>section>.container {
-    padding: 6em 0 4em 0;
+    padding: 2em 0 0em 0;
 }
 
 #main>section:first-child {
