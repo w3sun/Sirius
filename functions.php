@@ -1,6 +1,6 @@
 <?php
 
-define( 'SIRIUS_VERSION' , '1.0.2' );
+define( 'SIRIUS_VERSION' , '1.1.0' );
 
 /**
  * 主题更新
