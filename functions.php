@@ -1,6 +1,6 @@
 <?php
 
-define( 'SIRIUS_VERSION' , '1.1.0' );
+define( 'SIRIUS_VERSION' , '1.1.1' );
 
 /**
  * 主题更新
@@ -10,7 +10,7 @@ define( 'SIRIUS_VERSION' , '1.1.0' );
 require_once( get_template_directory() . '/inc/version.php' );
 $sirius_update_checker = new ThemeUpdateChecker(
 	'Sirius', 
-	'http://soft.vtrois.com/wordpress/theme/sirius/upgrade.json'
+	'https://mirrors.vtrois.com/themes/sirius/upgrade.json'
 );
 
 /**
