@@ -1,14 +1,12 @@
-#Sirius
+# Sirius
 
-###A clean simple and focus on reading theme for WordPress
+Sirius is a clean, simple and focus on reading theme for WordPress, based on HTML5 and [Font Awesome](https://github.com/FortAwesome/Font-Awesome). Created and maintained by Vtrois. Stay up to date with the latest release and announcements on [Bulletin Board](https://github.com/Vtrois/Sirius/issues).
 
-Sirius is a clean, simple and focus on reading theme for WordPress, based on HTML5 and [Font Awesome](https://github.com/FortAwesome/Font-Awesome). Created and maintained by [Vtrois](https://www.vtrois.com). Stay up to date with the latest release and announcements on [Bulletin Board](https://www.vtrois.com/projects/theme-sirius.html).
+![Sirius Theme Demo](http://i2.bvimg.com/1949/207806fbf9c45e51.png)
 
-![Sirius Theme Demo](https://camo.githubusercontent.com/ffcd5e19fbe929566b4a6fee4cc4ad6cca033a56/687474703a2f2f69322e6275696d672e636f6d2f3536373537312f323037383036666266396334356535312e706e67)
+## Structure
 
-##Structure
-
-Within the download you'll find the following directories and files. You'll see something like this:
+Within the download you'll find the following directories and files. You'll see something like this :point_down:
 
 ```
 Sirius/
@@ -68,14 +66,10 @@ Sirius/
 └── screenshot.png
 ```
 
-## Changelog
+## License
 
-- v1.0 - Initialize the project and say Good Morning to everyone!
-
-##License
-
-- The Sirius Html,CSS,JavaScript,and PHP files are licensed under the Mozilla Public License Version 2.0:
-  - https://www.mozilla.org/MPL/2.0/
+- The Sirius Html,CSS,JavaScript,and PHP files are licensed under the GNU General Public License v3:
+  - http://www.gnu.org/licenses/gpl-3.0.html
 
 - The Sirius documentation is licensed under the CC BY 4.0 License:
   - https://creativecommons.org/licenses/by/4.0
