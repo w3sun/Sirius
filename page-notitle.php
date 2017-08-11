@@ -12,7 +12,7 @@ get_header();?>
             <div class="container">
 				<?php if (have_posts()) : the_post(); update_post_caches($posts);
 				?>
-                <div class="post-content"><?php the_content(); ?></div>
+                    <div class="post-content"><?php the_content(); ?></div>
 				<?php endif; ?>
                 <?php comments_template(); ?>
             </div>
