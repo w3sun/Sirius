@@ -23,13 +23,12 @@ if ( post_password_required() ) {
 	<?php
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'amadeus' ); ?></p>
 	<?php endif; ?>
 	<?php include(TEMPLATEPATH . '/smiley.php');?>
 	<?php 
 		$fields =  array(
-   			 'author' => '<div class="row uniform"><div class="6u 12u(xsmall)"><input type="text" name="author" id="author" aria-required="true" required placeholder="Author" value="" ' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
-   			 'email'  => '<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" aria-required="true" required placeholder="E-Mail" value="" ' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div></div>',
+   			 'author' => '<div class="row uniform"><div class="6u 12u(xsmall)"><input type="text" name="author" id="author" aria-required="true" required placeholder="Author" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" /></div>',
+   			 'email'  => '<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" aria-required="true" required placeholder="E-Mail" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" /></div></div>',
    			 'url'  => '',
 		);
 		$args = array(
