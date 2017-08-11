@@ -3,7 +3,7 @@
    <section>
         <div class="container">
             <div class="err404">
-                <img class="err404" src="<?php echo get_template_directory_uri(); ?>/images/404.gif" />
+                <img class="err404" src="<?php echo get_template_directory_uri(); ?>/images/404.gif" alt="" />
             </div>
         </div>
     </section>
