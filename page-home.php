@@ -7,14 +7,10 @@ Template Name: 主页模板
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title><?php wp_title( '-', true, 'right' ); ?></title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" >
     <meta name="description" content="<?php sirius_description(); ?>" />
     <meta name="keywords" content="<?php sirius_keywords();?>" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/main.css" />
@@ -64,7 +60,7 @@ Template Name: 主页模板
             </div>
     </header>
     <footer class="footer">
-        <span class="footer__copyright">&copy; 2016 <a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> All Rights Reserved.</span>
+        <span class="footer__copyright">&copy; <?php echo date('Y'); ?> <a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a> All Rights Reserved.</span>
         <span class="footer__copyright"><?php echo get_option( 'zh_cn_l10n_icp_num' );?></span>
     </footer>
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
