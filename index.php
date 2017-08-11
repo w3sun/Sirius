@@ -13,10 +13,7 @@
             ?>
                  <div>
                     <h1>分类目录：<?php echo single_cat_title('', false); ?></h1>
-                </div>              
-            <?php
-                }elseif(is_date()){
-            ?>  
+                </div>
             <?php
                 }elseif(is_tag()){
             ?>
