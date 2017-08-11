@@ -553,12 +553,31 @@ function sirius_pages($range = 5){
 }
 
 /**
+ * 后台控制台提示
+ * @version 1.1
+ * @package Vtrois
+ */
+function sirius_admin_notice() {
+    ?>
+    <style type="text/css">
+        .about-description a{
+            text-decoration:none;
+        }
+    </style>
+    <div class="notice notice-info">
+    <p class="about-description">嗨，欢迎使用 Sirus 主题开始创作，同时欢迎您加入主题交流群：<a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f">51880737</a></p>
+    </div>
+    <?php
+}
+add_action( 'welcome_panel', 'sirius_admin_notice' );
+
+/**
  * 后台左侧页脚文字
  * @version 1.1
  * @package Vtrois
  */
 function sirius_admin_footer_text($text) {
-	   $text = '<span id="footer-thankyou">感谢使用 <a href=http://cn.wordpress.org/ target="_blank">WordPress</a>进行创作，并使用 <a href="http://www.vtrois.com/projects/theme-sirius.html" target="_blank">Sirius</a>主题样式，<a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=82c35be2134e64f296155ad2b2381e0744a994866ae2a0fa5379798edd926b3f">点击</a> 加入主题讨论群。</span>';
+	   $text = '<span id="footer-thankyou">感谢使用 <a href=http://cn.wordpress.org/ target="_blank">WordPress</a>进行创作，<a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f">点击</a> 加入主题讨论群。</span>';
 	return $text;
 }
 
