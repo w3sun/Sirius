@@ -1,6 +1,6 @@
 <?php
 
-define( 'SIRIUS_VERSION' , '1.1.1' );
+define( 'SIRIUS_VERSION' , '1.2' );
 
 /**
  * 主题更新
@@ -10,7 +10,7 @@ define( 'SIRIUS_VERSION' , '1.1.1' );
 require_once( get_template_directory() . '/inc/version.php' );
 $sirius_update_checker = new ThemeUpdateChecker(
 	'Sirius', 
-	'https://mirrors.vtrois.com/themes/sirius/upgrade.json'
+	'https://raw.githubusercontent.com/Vtrois/Sirius/master/inc/upgrade.json'
 );
 
 /**
@@ -34,7 +34,7 @@ function sirius_theme_scripts() {
     if ( !is_admin() ) {  
         wp_enqueue_style( 'awesome-style', $dir . '/css/font-awesome.css', array(), '4.6.3');
         wp_enqueue_style( 'sirius-style', get_stylesheet_uri(), array(), SIRIUS_VERSION); 
-        wp_enqueue_script( 'jquerys', $dir . '/js/jquery.min.js' , array(), '2.1.4');
+        wp_enqueue_script( 'jquery', $dir . '/js/jquery.min.js' , array(), '2.1.4');
         wp_enqueue_script( 'scrolly', $dir . '/js/jquery.scrolly.min.js', array(), '0.2');
         wp_enqueue_script( 'skel', $dir . '/js/skel.min.js', array(), '3.0.1');
         wp_enqueue_script( 'util', $dir . '/js/util.min.js', array(),  SIRIUS_VERSION);
@@ -65,6 +65,10 @@ remove_action( 'wp_head', 'rel_canonical' );
 remove_action( 'wp_footer', 'wp_print_footer_scripts' );   
 remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );   
 remove_action( 'template_redirect', 'wp_shortlink_header', 11, 0 ); 
+add_action( 'wp_enqueue_scripts', 'mt_enqueue_scripts', 1 );
+function mt_enqueue_scripts() {
+  wp_deregister_script('jquery');
+}
 
 function disable_emojis() {
     global $wp_version;
