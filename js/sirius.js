@@ -51,5 +51,6 @@
 			visibleClass: 'header-visible'
 		});
 		if (skel.vars.os == 'wp' && skel.vars.osVersion < 10) $('#titleBar, #header, #wrapper').css('transition', 'none')
-	})
+	});
+	console.log("项目托管：https://github.com/Vtrois/Sirius");
 })(jQuery);
