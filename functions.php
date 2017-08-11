@@ -565,7 +565,7 @@ function sirius_admin_notice() {
         }
     </style>
     <div class="notice notice-info">
-    <p class="about-description">嗨，欢迎使用 Sirus 主题开始创作，同时欢迎您加入主题交流群：<a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f">51880737</a></p>
+    <p class="about-description">嗨，欢迎使用 Sirius 主题开始创作，同时欢迎您加入主题交流群：<a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=182bd07a135c085c88ab7e3de38f2b2d9a86983292355a4708926b99dcd5b89f">51880737</a></p>
     </div>
     <?php
 }
