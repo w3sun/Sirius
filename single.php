@@ -12,10 +12,10 @@
                     <h1 class="post-title text-center"><?php the_title(); ?></h1>
                     <div class="post-meta text-center">
                         <span>
-                        <a href="#"><i class="fa fa-calendar"></i> <?php the_time('Y/n/j') ?></a>
+                        <a href="#"><i class="fa fa-calendar"></i> <?php echo get_the_date(); ?></a>
                         <?php comments_popup_link('<i class="fa fa-commenting-o"></i> 0 Comment', '<i class="fa fa-commenting-o"></i> 1 Comment', '<i class="fa fa-commenting-o"></i> % Comment', '', '<i class="fa fa-commenting-o"></i> 0 Comment'); ?>
-                        <a href="<?php the_permalink() ?>"><i class="fa fa-eye"></i> <?php echo sirius_get_post_views();?> View</a>
-                        <a href="<?php the_permalink() ?>"><i class="fa fa-thumbs-o-up"></i> <?php if( get_post_meta($post->ID,'sirius_love',true) ){ echo get_post_meta($post->ID,'sirius_love',true); } else { echo '0'; }?> Times</a>
+                        <a href="<?php the_permalink() ?>"><i class="fa fa-eye"></i> <?php echo sirius_get_post_views();?>人浏览</a>
+                        <a href="<?php the_permalink() ?>"><i class="fa fa-thumbs-o-up"></i> <?php if( get_post_meta($post->ID,'sirius_love',true) ){ echo get_post_meta($post->ID,'sirius_love',true); } else { echo '0'; }?>次点赞</a>
                         <?php if( current_user_can( 'manage_options' ) ) {?>
                         <?php edit_post_link('<i class="fa fa-pencil"></i> Edit'); ?>
                         <?php }?>
